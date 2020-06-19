@@ -8,6 +8,8 @@
     </head>
 
     <body>
+        <br>
+        <br>
         
 
         <div class="clock">
@@ -34,8 +36,9 @@
 
             Let day = new Date();
             Let hh = day.getHours() * 30;
-            Let mm = day.getMinutes() * deg;
+            Let mm  = day.getMinutes() * deg;      //has to improve this
             Let ss = day.getSeconds() * deg;
+            
 
             hr.style.transform = 'rotateZ(${(hh)+(mm/12)}deg)';
             mn.style.transform = 'rotateZ(${mm}deg)';
