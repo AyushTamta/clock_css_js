@@ -13,6 +13,7 @@
         
 
         <div class="clock">
+            <img src="clock.png" alt="">
             <div class="hour">
                 <div class="hr" id="hr"></div></div>
             
@@ -26,26 +27,9 @@
                 </div>
              </div>
 
-             <script type="text/javascript">
-            const deg  = 6 ;
-            const hr =document.querySelector('#hr');
-            const mn =document.querySelector('#mn');
-            const sc =document.querySelector('#sc');
-
-            setInterval(() => {
-
-            Let day = new Date();
-            Let hh = day.getHours() * 30;
-            Let mm  = day.getMinutes() * deg;      //has to improve this
-            Let ss = day.getSeconds() * deg;
-            
-
-            hr.style.transform = 'rotateZ(${(hh)+(mm/12)}deg)';
-            mn.style.transform = 'rotateZ(${mm}deg)';
-            sc.style.transform = 'rotateZ(${ss}deg)';
-            })
-
-            </script>
+             <script src="script.js"></script> 
+  
+    
           </body>
     </div>
 </html>
